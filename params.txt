@@ -1,5 +1,6 @@
 [miner id]
 [wallet2 private_key]
+[wallet2 account password]
 [public IP]
 [disk path]
 [disk volume]
