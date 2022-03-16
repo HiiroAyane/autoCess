@@ -1,1 +1,1 @@
-cess
+automatically deploy Cess node
