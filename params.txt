@@ -1,0 +1,5 @@
+[miner id]
+[wallet2 private_key]
+[public IP]
+[disk path]
+[disk volume]
