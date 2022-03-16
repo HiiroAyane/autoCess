@@ -127,11 +127,11 @@ bool deployCess()
 	cout << "安装依赖成功！\n";
 
 	cout << "开始下载必要文件...\n";
-	strCmd = "cd /usr/cess-proof-parameters && wget -nc 113.207.1.24:1023/geth";
+	strCmd = "cd /usr/cess-proof-parameters && wget https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.10.16-20356e57.tar.gz -O geth.tar.gz && tar -zxvf geth.tar.gz && mv geth-linux-amd64-1.10.16-20356e57/geth .";
 	exepopen(strCmd, strRes);
-	strCmd = "cd /usr/cess-proof-parameters && wget -nc 113.207.1.24:1023/cessnode";
+	strCmd = "cd /usr/cess-proof-parameters && wget https://d2gxbb5i8u5h7r.cloudfront.net/node_v0.4.3 -O cessnode";
 	exepopen(strCmd, strRes);
-	strCmd = "cd /usr/cess-proof-parameters && wget -nc 113.207.1.24:1023/parameterfile.zip";
+	strCmd = "cd /usr/cess-proof-parameters && wget -nc https://d2gxbb5i8u5h7r.cloudfront.net/parameterfile.zip";
 	exepopen(strCmd, strRes);
 	strCmd = "cd /usr/cess-proof-parameters && unzip parameterfile.zip && mv parameterfile/v28-* .";
 	exepopen(strCmd, strRes);
